@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Trady.Views.LogInPage"
+             BackgroundImage="back_ground.png"   
+             xmlns:viewModel="clr-namespace:Trady.ViewModels">
+
+    <ContentPage.BindingContext>
+        <viewModel:LoginPageViewModels />
+    </ContentPage.BindingContext>
+
+    <AbsoluteLayout Margin="0,20,0,0">
+        <Image Source="circlecropped.png" AbsoluteLayout.LayoutBounds=".5,.10,100,100" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <Frame 
+            CornerRadius ="20" BackgroundColor="#707070" AbsoluteLayout.LayoutBounds=".5,.30,.3,.075" AbsoluteLayout.LayoutFlags="All" Padding="0,0,0,0">
+            <Label Text="TRADY" FontSize="30" TextColor="#FD33A7" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </Frame>
+        <Frame
+           CornerRadius ="20"
+            AbsoluteLayout.LayoutBounds=".5,.4,.9,.07" AbsoluteLayout.LayoutFlags="All" Padding="20,0,20,0">
+            <Entry Placeholder="Username" Text="{Binding UserName}"  PlaceholderColor="#bababa" FontSize="16" x:Name="EntryUser"/>
+        </Frame>
+        <Frame
+           CornerRadius ="20"
+            AbsoluteLayout.LayoutBounds=".5,.5,.9,.07" AbsoluteLayout.LayoutFlags="All" Padding="20,0,20,0">
+            <Entry Placeholder="Password" Text="{Binding Password}" PlaceholderColor="#bababa" FontSize="16" x:Name="EntryPassword"/>
+        </Frame>
+        <Button Text="Forgot Password?" BackgroundColor="LightGray" BorderRadius="15" HorizontalOptions="Center" FontSize="10" Padding="0,0,0,0" AbsoluteLayout.LayoutBounds=".5,.575,.3,.03" AbsoluteLayout.LayoutFlags="All"/>
+        <Button Text="Sign In" BackgroundColor="#2EEEE8" FontSize="16" TextColor="White" BorderRadius="25"  Padding="0,0,0,0" AbsoluteLayout.LayoutBounds=".5,.7,.9,.08" AbsoluteLayout.LayoutFlags="All" Command="{Binding LoginCommand}"/>
+        <Label Text="Don't have a account?" TextColor="White" HorizontalOptions="Center" FontSize="12" AbsoluteLayout.LayoutBounds=".5,.9,.3,.03" AbsoluteLayout.LayoutFlags="All"/>
+        <Label Text="Sign up" TextColor="White" HorizontalOptions="Center" FontSize="12" AbsoluteLayout.LayoutBounds=".5,.95,.3,.03" AbsoluteLayout.LayoutFlags="All">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding SignUpCommand}"/>
+            </Label.GestureRecognizers>
+        </Label>
+
+    </AbsoluteLayout>
+</ContentPage>    
+
