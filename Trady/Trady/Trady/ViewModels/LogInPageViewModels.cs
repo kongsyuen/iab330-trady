@@ -91,6 +91,7 @@ namespace Trady.ViewModels
                 if (user != null)
                 {
                     await Application.Current.MainPage.DisplayAlert("Correct", "Correct credentials entered!", "OK");
+                    Application.Current.MainPage = new NavigationPage(new Views.HomePage());
                 }
                 else
                 {
