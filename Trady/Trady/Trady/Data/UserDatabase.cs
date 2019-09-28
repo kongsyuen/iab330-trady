@@ -18,6 +18,8 @@ namespace Trady.Data
         {
             database = new SQLiteAsyncConnection(dbPath);
             database.CreateTableAsync<User>().Wait();
+            database.CreateTableAsync<Inquiries>().Wait();
+
         }
 
         // Get specific user
@@ -25,6 +27,13 @@ namespace Trady.Data
         {
             return database.Table<User>()
                             .Where(i => i.UserName == userName && i.Password == password)
+                            .FirstOrDefaultAsync();
+        }
+
+        public Task<Inquiries> GetInquiryAsync(string InquiryName)
+        {
+            return database.Table<Inquiries>()
+                            .Where(i => i.InquiryName == InquiryName)
                             .FirstOrDefaultAsync();
         }
 
@@ -46,5 +55,18 @@ namespace Trady.Data
         {
             return database.DeleteAsync(user);
         }
+
+        public Task<int> SaveInquiryAsync(Inquiries inquiry)
+        {
+            if (inquiry.InquiryID != 0)
+            {
+                return database.UpdateAsync(inquiry);
+            }
+            else
+            {
+                return database.InsertAsync(inquiry);
+            }
+        }
+
     }
 }
