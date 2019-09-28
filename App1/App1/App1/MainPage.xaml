@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.MainPage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image Source="image1.jpg" Aspect="Fill"/>
+  
+            <Image Source="logo330.png" AbsoluteLayout.LayoutBounds=".5,.01,.3,.3" AbsoluteLayout.LayoutFlags="All"/>
+
+            <Frame BorderColor="Red"  CornerRadius="50" BackgroundColor="Black" Opacity="0.6" AbsoluteLayout.LayoutBounds=".5,.27,.5,.07" AbsoluteLayout.LayoutFlags="All" Padding="0,0,0,0">
+                <Label Text="TRADY" FontSize="35" FontAttributes="Bold" TextColor="DeepPink" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Frame>
+
+            <Frame BorderColor="Red"  CornerRadius="50" BackgroundColor="DeepPink" Opacity="0.6" AbsoluteLayout.LayoutBounds=".5,.37,.7,.09" AbsoluteLayout.LayoutFlags="All" Padding="0,0,0,0">
+                <Label Text="REGISTER" FontSize="45" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Frame>
+
+            <Frame BorderColor="Red"  CornerRadius="50" BackgroundColor="White" Opacity="0.9" AbsoluteLayout.LayoutBounds=".09,.5,.39,.08" AbsoluteLayout.LayoutFlags="All"/>
+            <Image Source="facebook.png"  AbsoluteLayout.LayoutBounds=".105,.5,.1,.05" AbsoluteLayout.LayoutFlags="All"/>
+            <Label Text="Facebook" TextColor="Black" FontSize="19" AbsoluteLayout.LayoutBounds=".27,.497,.22,.035" AbsoluteLayout.LayoutFlags="All"/>
+            <Frame BorderColor="Red"  CornerRadius="50" BackgroundColor="White" Opacity="0.9" AbsoluteLayout.LayoutBounds=".92,.5,.39,.08" AbsoluteLayout.LayoutFlags="All"/>
+            <Image Source="twitter.png"  AbsoluteLayout.LayoutBounds=".67,.5,.1,.05" AbsoluteLayout.LayoutFlags="All"/>
+
+            <Label Text="Twitter" FontSize="19" TextColor="Black"  AbsoluteLayout.LayoutBounds=".85,.497,.159,.039" AbsoluteLayout.LayoutFlags="All"/>
+
+            <Frame BorderColor="Red"  CornerRadius="50" BackgroundColor="White" AbsoluteLayout.LayoutBounds=".509,.58,.15,.05" AbsoluteLayout.LayoutFlags="All" Padding="0,0,0,0">
+                <Label Text="OR" FontSize="25" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Frame>
+
+            <Frame BorderColor="Black"  CornerRadius="50" BackgroundColor="WhiteSmoke" Opacity="0.8" AbsoluteLayout.LayoutBounds=".5,.665,.9,.06" AbsoluteLayout.LayoutFlags="All" Padding="20,0,20,0">
+                <Entry Placeholder="Username" VerticalOptions="Center"/>
+            </Frame>
+
+            <Frame BorderColor="Black"  CornerRadius="50" BackgroundColor="WhiteSmoke" Opacity="0.8" AbsoluteLayout.LayoutBounds=".5,.760,.9,.06" AbsoluteLayout.LayoutFlags="All" Padding="20,0,20,0">
+                <Entry Placeholder="Password" IsPassword="True" VerticalOptions="Center"/>
+            </Frame>
+
+            <Frame BorderColor="Black"  CornerRadius="50" BackgroundColor="WhiteSmoke" Opacity="0.8" AbsoluteLayout.LayoutBounds=".5,.855,.9,.06" AbsoluteLayout.LayoutFlags="All" Padding="20,0,20,0">
+                <Entry Placeholder="Email" VerticalOptions="Center" />
+            </Frame>
+           
+            <Button Text="CREATE ACCOUNT" TextColor="White" FontSize="30" Opacity="0.9" CornerRadius="15" BackgroundColor="LightSeaGreen" AbsoluteLayout.LayoutBounds=".5,.97,.95,.08" AbsoluteLayout.LayoutFlags="All" Padding="0,0,0,0"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+
+</ContentPage>

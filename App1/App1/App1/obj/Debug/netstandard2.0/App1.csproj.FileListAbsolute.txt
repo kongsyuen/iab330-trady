@@ -1,0 +1,17 @@
+C:\Users\Halo\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
+C:\Users\Halo\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll
+C:\Users\Halo\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.pdb
+C:\Users\Halo\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.csprojAssemblyReference.cache
+C:\Users\Halo\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Halo\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Halo\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CoreCompileInputs.cache
+C:\Users\Halo\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
+C:\Users\Halo\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
+C:\Users\Halo\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.dll
+C:\Users\Halo\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+C:\Users\Halo\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\Inquiry.xaml.g.cs
+C:\Users\Halo\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\TabbedInqury.xaml.g.cs
+C:\Users\Halo\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\Test.xaml.g.cs
+C:\Users\Halo\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\Page1.xaml.g.cs
+C:\Users\Halo\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Halo\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\PropertyDetail.xaml.g.cs
