@@ -14,6 +14,7 @@ namespace Trady.Views
     {
         public InquiryDetail(string InquiryName, string InquiryDate, string InquiryDetail)
         {
+            InitializeComponent();
             CategoryName.Text = InquiryName;
             DateName.Text = InquiryDate;
             DescriptionName.Text = InquiryDetail;

@@ -15,8 +15,8 @@
             <Frame CornerRadius="50" Opacity="0.9" AbsoluteLayout.LayoutBounds=".5,.129,.5,.07" AbsoluteLayout.LayoutFlags="All" BackgroundColor="WhiteSmoke" Padding="0,0,0,0">
                 <Label Text="INQUIRIES" FontSize="35" HorizontalOptions="Center" VerticalOptions="Center"/>
             </Frame>
-            <Button  ImageSource="add.png"  AbsoluteLayout.LayoutBounds=".95,.05,.135,.08" BackgroundColor="MediumPurple" CornerRadius="25" AbsoluteLayout.LayoutFlags="All"/>
-            <ListView x:Name="PropertyList" AbsoluteLayout.LayoutBounds=".5,.85,1,.6" AbsoluteLayout.LayoutFlags="All" ItemsSource="{Binding InquiryList}" ItemTapped="ListView_ItemTapped"  HasUnevenRows="True">
+            <Button  ImageSource="add.png"  AbsoluteLayout.LayoutBounds=".95,.05,.135,.08" BackgroundColor="MediumPurple" CornerRadius="25" AbsoluteLayout.LayoutFlags="All" Clicked="Button_Clicked"/>
+            <ListView x:Name="PropertyList" AbsoluteLayout.LayoutBounds=".5,.995,1,.65" AbsoluteLayout.LayoutFlags="All" ItemsSource="{Binding InquiryList}" ItemTapped="ListView_ItemTapped" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

@@ -88,6 +88,7 @@ namespace Trady.ViewModels
             };
 
             await App.Database.SaveUserAsync(user);
+            Application.Current.MainPage = new NavigationPage(new Views.LogInPage());
 
         }
 

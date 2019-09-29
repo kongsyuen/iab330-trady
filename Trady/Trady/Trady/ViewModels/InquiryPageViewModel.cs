@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using Trady.Models;
+using Trady.Views;
+using Xamarin.Forms;
 
 namespace Trady.ViewModels
 {

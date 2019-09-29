@@ -16,11 +16,16 @@ namespace Trady.Views
         {
             InitializeComponent();
         }
-        private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var inquiryItem = e.Item as Inquiries;
 
-            Navigation.PushAsync(new InquiryDetail(inquiryItem.InquiryName, inquiryItem.InquiryDate, inquiryItem.InquiryDetail));
+            await Navigation.PushAsync(new InquiryDetail(inquiryItem.InquiryName, inquiryItem.InquiryDate, inquiryItem.InquiryDetail));
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new InquiryCreatePage());
         }
     }
 }
