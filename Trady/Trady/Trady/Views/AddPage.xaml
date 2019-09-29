@@ -5,27 +5,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Trady.Views.AddPage">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Upload" Clicked="Upload_Clicked"/>
-    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-       <StackLayout>
-
-            <StackLayout Spacing="20" Padding="15">
-            <Label Text="Text" FontSize="Medium" />
-                <Entry Placeholder="Text" Keyboard="Text"/>
-            <!--<Entry Text="{Binding Item.Text}" d:Text="Item name" FontSize="Small" />-->
-            <!--<Editor Text="{Binding Item.Description}" d:Text="Item description" FontSize="Small" Margin="0" />-->
-        </StackLayout>
-            
-            <Button Text="Select Picture"
-                    Clicked="btnSelectPicture_Clicked" />
-            <Image x:Name="imgPhoto" />
-
-           
-
-            <Label Text="Description" FontSize="Medium" />
-                <Entry Placeholder="Text" Keyboard="Text"/>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
