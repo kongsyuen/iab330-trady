@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trady.Views.ChoosePage"
+             Title="Home"
+             NavigationPage.HasBackButton="True"
+             IconImageSource="home_icon.png">
+    <!--<ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 50, 0, 0" />
+    </ContentPage.Padding>-->
+    <ContentPage.Content>
+
+        <ScrollView>
+
+            <StackLayout>
+                <Image x:Name="background"
+                       Source="background.jpg"
+                       Aspect="AspectFill" />
+                <Label Text="WELCOME USER" HorizontalTextAlignment="Center"/>
+                <Button Text="Buy N Trade"
+                        Clicked="Button_Clicked"
+                        TextColor="white"
+                        BorderWidth="1"
+                        BorderColor="#6368F0"
+                        BackgroundColor="#6368F0"/>
+                <Button Text="Create Inquiries"
+                        Clicked="Inquiries_Clicked"
+                        TextColor="white"
+                        BorderWidth="1"
+                        BorderColor="#6368F0"
+                        BackgroundColor="#6368F0"/>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
