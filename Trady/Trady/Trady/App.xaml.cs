@@ -26,7 +26,7 @@ namespace Trady
         {
             InitializeComponent();
 
-            MainPage = new Views.LogInPage();
+            MainPage = new NavigationPage(new Views.LogInPage());
         }
 
         protected override void OnStart()

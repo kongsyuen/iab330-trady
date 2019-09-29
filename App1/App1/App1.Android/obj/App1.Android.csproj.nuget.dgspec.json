@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kenny\\source\\repos\\iab330-trady\\App1\\App1\\App1.Android\\App1.Android.csproj": {}
+    "C:\\Users\\Halo\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kenny\\source\\repos\\iab330-trady\\App1\\App1\\App1.Android\\App1.Android.csproj": {
+    "C:\\Users\\Halo\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenny\\source\\repos\\iab330-trady\\App1\\App1\\App1.Android\\App1.Android.csproj",
+        "projectUniqueName": "C:\\Users\\Halo\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj",
         "projectName": "App1.Android",
-        "projectPath": "C:\\Users\\kenny\\source\\repos\\iab330-trady\\App1\\App1\\App1.Android\\App1.Android.csproj",
-        "packagesPath": "C:\\Users\\kenny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenny\\source\\repos\\iab330-trady\\App1\\App1\\App1.Android\\obj\\",
+        "projectPath": "C:\\Users\\Halo\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj",
+        "packagesPath": "C:\\Users\\Halo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Halo\\source\\repos\\App1\\App1\\App1.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\kenny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Halo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\kenny\\source\\repos\\iab330-trady\\App1\\App1\\App1\\App1.csproj": {
-                "projectPath": "C:\\Users\\kenny\\source\\repos\\iab330-trady\\App1\\App1\\App1\\App1.csproj"
+              "C:\\Users\\Halo\\source\\repos\\App1\\App1\\App1\\App1.csproj": {
+                "projectPath": "C:\\Users\\Halo\\source\\repos\\App1\\App1\\App1\\App1.csproj"
               }
             }
           }
@@ -86,21 +86,21 @@
         }
       }
     },
-    "C:\\Users\\kenny\\source\\repos\\iab330-trady\\App1\\App1\\App1\\App1.csproj": {
+    "C:\\Users\\Halo\\source\\repos\\App1\\App1\\App1\\App1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenny\\source\\repos\\iab330-trady\\App1\\App1\\App1\\App1.csproj",
+        "projectUniqueName": "C:\\Users\\Halo\\source\\repos\\App1\\App1\\App1\\App1.csproj",
         "projectName": "App1",
-        "projectPath": "C:\\Users\\kenny\\source\\repos\\iab330-trady\\App1\\App1\\App1\\App1.csproj",
-        "packagesPath": "C:\\Users\\kenny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenny\\source\\repos\\iab330-trady\\App1\\App1\\App1\\obj\\",
+        "projectPath": "C:\\Users\\Halo\\source\\repos\\App1\\App1\\App1\\App1.csproj",
+        "packagesPath": "C:\\Users\\Halo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Halo\\source\\repos\\App1\\App1\\App1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\kenny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Halo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
