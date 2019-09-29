@@ -2173,24 +2173,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Halo\\.nuget\\packages\\": {},
+    "C:\\Users\\kenny\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Halo\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj",
+      "projectUniqueName": "C:\\Users\\kenny\\source\\repos\\iab330-trady\\App1\\App1\\App1.Android\\App1.Android.csproj",
       "projectName": "App1.Android",
-      "projectPath": "C:\\Users\\Halo\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj",
-      "packagesPath": "C:\\Users\\Halo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Halo\\source\\repos\\App1\\App1\\App1.Android\\obj\\",
+      "projectPath": "C:\\Users\\kenny\\source\\repos\\iab330-trady\\App1\\App1\\App1.Android\\App1.Android.csproj",
+      "packagesPath": "C:\\Users\\kenny\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kenny\\source\\repos\\iab330-trady\\App1\\App1\\App1.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Halo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kenny\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2204,8 +2204,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\Halo\\source\\repos\\App1\\App1\\App1\\App1.csproj": {
-              "projectPath": "C:\\Users\\Halo\\source\\repos\\App1\\App1\\App1\\App1.csproj"
+            "C:\\Users\\kenny\\source\\repos\\iab330-trady\\App1\\App1\\App1\\App1.csproj": {
+              "projectPath": "C:\\Users\\kenny\\source\\repos\\iab330-trady\\App1\\App1\\App1\\App1.csproj"
             }
           }
         }

@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using XLabs.Platform.Services.Media;
 
 namespace Trady.Droid
 {
@@ -14,6 +15,7 @@ namespace Trady.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            SetIoc();
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
@@ -30,6 +32,14 @@ namespace Trady.Droid
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+        private void SetIoc()
+        {
+            var resolverContainer = new global::XLabs.Ioc.SimpleContainer();
+            resolverContainer
+                .Register<IMediaPicker, MediaPicker>();
+
+            XLabs.Ioc.Resolver.SetResolver(resolverContainer.GetResolver());
         }
     }
 }

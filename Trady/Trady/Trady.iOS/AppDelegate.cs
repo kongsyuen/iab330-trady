@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using XLabs.Platform.Services.Media;
 
 namespace Trady.iOS
 {
@@ -23,10 +24,19 @@ namespace Trady.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             Rg.Plugins.Popup.Popup.Init();
+            SetIoc();
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
+        }
+        private void SetIoc()
+        {
+            var resolverContainer = new global::XLabs.Ioc.SimpleContainer();
+            resolverContainer
+                .Register<IMediaPicker, MediaPicker>();
+
+            XLabs.Ioc.Resolver.SetResolver(resolverContainer.GetResolver());
         }
     }
 }
