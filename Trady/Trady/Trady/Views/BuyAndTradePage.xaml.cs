@@ -16,5 +16,14 @@ namespace Trady.Views
         {
             InitializeComponent();
         }
+        void OnSearchBarButtonPressed(object sender, EventArgs e)
+        {
+            
+        }
+
+        async private void AddPage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AddPage());
+        }
     }
 }

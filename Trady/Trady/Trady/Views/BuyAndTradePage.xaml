@@ -5,11 +5,20 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Trady.Views.BuyAndTradePage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Clicked="AddPage_Clicked"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+            <Image x:Name="background"
+                   Source="city01.jpg"
+                   Aspect="AspectFill" />
+            <SearchBar Placeholder="Search"
+                       SearchButtonPressed="OnSearchBarButtonPressed" />
+            <ListView x:Name="listview">
+
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
