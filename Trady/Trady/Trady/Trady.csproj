@@ -18,11 +18,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\BuyAndTrade.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Update="Views\Profile.xaml.cs">
       <DependentUpon>Profile.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Remove="Models\BuyAndTrade.xaml" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Views\AddPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
