@@ -15,7 +15,7 @@
 
             <StackLayout>
                 <Image x:Name="background"
-                       Source="background.jpg"
+                       Source="city01.jpg"
                        Aspect="AspectFill" />
                 <Label Text="WELCOME USER" HorizontalTextAlignment="Center"/>
                 <Button Text="Buy N Trade"
