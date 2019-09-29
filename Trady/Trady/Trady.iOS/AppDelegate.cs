@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using XLabs.Platform.Services.Media;
 
 namespace Trady.iOS
 {

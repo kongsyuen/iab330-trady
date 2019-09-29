@@ -44,6 +44,8 @@ namespace Trady.Views
             Debug.WriteLine($"picture path : {mediaFile.Path}");
 
             imgPhoto.Source = mediaFile.Path;
+
+           
         }
 
         async private void Upload_Clicked(object sender, EventArgs e)

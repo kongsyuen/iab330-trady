@@ -22,6 +22,8 @@
                     Clicked="btnSelectPicture_Clicked" />
             <Image x:Name="imgPhoto" />
 
+           
+
             <Label Text="Description" FontSize="Medium" />
                 <Entry Placeholder="Text" Keyboard="Text"/>
         </StackLayout>
