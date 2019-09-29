@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Trady.Views.InquiryDetail">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image Source="photologo.png" Grid.Row="0" Aspect="Fill" Grid.ColumnSpan="3"/>
+                <StackLayout Grid.Row="1" BackgroundColor="LightBlue" Grid.ColumnSpan="3">
+                    <Label x:Name="CategoryName" FontSize="30" HorizontalOptions="Center" TextColor="Black"/>
+                    <Label x:Name="DateName" FontSize="30" HorizontalOptions="Center" TextColor="Black"/>
+                </StackLayout>
+                <Button Grid.Row="2" Grid.ColumnSpan="3" Text="Profile" BackgroundColor="LightSkyBlue"/>
+                <Label x:Name="DescriptionName" FontSize="25" Grid.Row="3" TextColor="Black" BackgroundColor="LightPink" Grid.ColumnSpan="3" LineBreakMode="WordWrap"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

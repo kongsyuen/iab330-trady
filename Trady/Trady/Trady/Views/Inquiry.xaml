@@ -4,7 +4,11 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Trady.Views.Inquiry" Title="ALL">
+             x:Class="Trady.Views.Inquiry" Title="ALL"
+             xmlns:viewModel="clr-namespace:Trady.ViewModels">
+    <ContentPage.BindingContext>
+        <viewModel:InquiryPageViewModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <AbsoluteLayout>
             <Image Source="city01.jpg" AbsoluteLayout.LayoutBounds=".5,.01,.95,.3" AbsoluteLayout.LayoutFlags="All"/>
@@ -12,7 +16,7 @@
                 <Label Text="INQUIRIES" FontSize="35" HorizontalOptions="Center" VerticalOptions="Center"/>
             </Frame>
             <Button  ImageSource="add.png"  AbsoluteLayout.LayoutBounds=".95,.05,.135,.08" BackgroundColor="MediumPurple" CornerRadius="25" AbsoluteLayout.LayoutFlags="All"/>
-            <ListView x:Name="PropertyList" AbsoluteLayout.LayoutBounds=".5,.85,1,.6" AbsoluteLayout.LayoutFlags="All" ItemsSource="{Binding Properties}"  HasUnevenRows="True">
+            <ListView x:Name="PropertyList" AbsoluteLayout.LayoutBounds=".5,.85,1,.6" AbsoluteLayout.LayoutFlags="All" ItemsSource="{Binding InquiryList}" ItemTapped="ListView_ItemTapped"  HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -30,8 +34,8 @@
                                 <Image Source="photologo.png" HorizontalOptions="EndAndExpand" HeightRequest="150" Grid.Column="2" Grid.RowSpan="2"/>
                                 <Label FontSize="20" TextColor="Black" Text="Category:" Grid.Column="0" Grid.Row="0"/>
                                 <Label FontSize="20" TextColor="Black" Text="Date: " Grid.Column="0" Grid.Row="1"/>
-                                <Label FontSize="20" TextColor="Black" Text="{Binding Category}" Grid.Column="1" Grid.Row="0"/>
-                                <Label FontSize="20" TextColor="Black" Text="{Binding Date}" Grid.Column="1" Grid.Row="1"/>
+                                <Label FontSize="20" TextColor="Black" Text="{Binding InquiryName}" Grid.Column="1" Grid.Row="0"/>
+                                <Label FontSize="20" TextColor="Black" Text="{Binding InquiryDate}" Grid.Column="1" Grid.Row="1"/>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
