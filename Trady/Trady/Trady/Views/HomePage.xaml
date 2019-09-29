@@ -8,10 +8,10 @@
              android:TabbedPage.ToolbarPlacement="Bottom"
              xmlns:local="clr-namespace:Trady.Views"
              x:Class="Trady.Views.HomePage">
-    <local:Inquiry Title="Home" Icon="home.png" />
+    <local:ChoosePage Title="Home" Icon="home.png" />
 
-    <!--<local:savelist Title="Savelist" Icon="savelist.png" />-->
+    <local:SavelistPage Title="Savelist" Icon="favouritelogo.png" />
 
-    <local:Profile Title="Profile" Icon="profile.png"/>
+    <local:Profile Title="Profile" Icon="profilelogo.png"/>
 
 </TabbedPage>
