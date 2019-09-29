@@ -1,14 +1,11 @@
-﻿using BenchmarkDotNet.Characteristics;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XLabs.Ioc;
 using XLabs.Platform.Services.Media;
+
 
 namespace Trady.Views
 {
@@ -22,22 +19,22 @@ namespace Trady.Views
 
 
             mediaPicker = Resolver.Resolve<IMediaPicker>();
-        }
+            }
 
-        //async void btnTakePicture_Clicked(object sender, EventArgs e)
-        //{
-        //    var mediaFile = await mediaPicker.TakePhotoAsync(new CameraMediaStorageOptions
-        //    {
-        //        DefaultCamera = CameraDevice.Rear,
-        //        MaxPixelDimension = 400
-        //    });
+            //async void btnTakePicture_Clicked(object sender, EventArgs e)
+            //{
+            //    var mediaFile = await mediaPicker.TakePhotoAsync(new CameraMediaStorageOptions
+            //    {
+            //        DefaultCamera = CameraDevice.Rear,
+            //        MaxPixelDimension = 400
+            //    });
 
-        //    Debug.WriteLine($"picture path : {mediaFile.Path}");
+            //    Debug.WriteLine($"picture path : {mediaFile.Path}");
 
-        //    imgPhoto.Source = mediaFile.Path;
-        //}
+            //    imgPhoto.Source = mediaFile.Path;
+            //}
 
-        async void btnSelectPicture_Clicked(object sender, EventArgs e)
+            async void btnSelectPicture_Clicked(object sender, EventArgs e)
         {
             var mediaFile = await mediaPicker.SelectPhotoAsync(new CameraMediaStorageOptions());
 
