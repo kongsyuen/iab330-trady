@@ -13,7 +13,6 @@ namespace Trady.Data
     public class UserDatabase
     {
         readonly SQLiteAsyncConnection database;
-
         public UserDatabase(string dbPath)
         {
             database = new SQLiteAsyncConnection(dbPath);
@@ -56,6 +55,7 @@ namespace Trady.Data
             return database.DeleteAsync(user);
         }
 
+        //Insert Inquiry
         public Task<int> SaveInquiryAsync(Inquiries inquiry)
         {
             if (inquiry.InquiryID != 0)

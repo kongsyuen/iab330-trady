@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+using XLabs.Ioc;
+using XLabs.Platform.Services.Media;
 
 namespace Trady.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AddPage : ContentPage
     {
+        private IMediaPicker mediaPicker;
+
         public AddPage()
         {
             InitializeComponent();

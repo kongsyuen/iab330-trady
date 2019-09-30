@@ -80,15 +80,23 @@ namespace Trady.ViewModels
 
         private async void SignUpClicked(object obj)
         {
-            User user = new User
-            {
-                UserName = UserName,
-                Email = Email,
-                Password = Password
-            };
 
-            await App.Database.SaveUserAsync(user);
-            Application.Current.MainPage = new NavigationPage(new Views.LogInPage());
+            if (UserName == null || Email == null || Password == null)
+            {
+                await Application.Current.MainPage.DisplayAlert("Sorry!", "Please fill in all of the fields!", "OK");
+            }
+            else
+            {
+                User user = new User
+                {
+                    UserName = UserName,
+                    Email = Email,
+                    Password = Password
+                };
+
+                await App.Database.SaveUserAsync(user);
+                Application.Current.MainPage = new NavigationPage(new Views.LogInPage());
+            }
 
         }
 
