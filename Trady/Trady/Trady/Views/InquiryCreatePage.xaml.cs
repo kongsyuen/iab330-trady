@@ -7,6 +7,8 @@ using Plugin.Media;
 using Plugin.Media.Abstractions;
 using Rg.Plugins.Popup.Pages;
 using Rg.Plugins.Popup.Services;
+using Trady.Models;
+using Trady.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +17,8 @@ namespace Trady.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class InquiryCreatePage : ContentPage
     {
+        InquiryPageViewModel _inquiryList;
+        Inquiries _newInquiry;
         public InquiryCreatePage()
         {
             InitializeComponent();
@@ -50,6 +54,16 @@ namespace Trady.Views
 
             await PopupNavigation.Instance.PushAsync(new ImagePopUpPage(_photo.Path));
 
+        }
+
+        private async void Button_Clicked_1(object sender, EventArgs e)
+        {
+            _newInquiry.InquiryName = InquiryName.Text;
+            _newInquiry.InquiryDate = InquiryDate.Text;
+            _newInquiry.InquiryDetail = InquiryDetail.Text;
+            _inquiryList.InquiryList.Add(_newInquiry);
+            await Navigation.PushAsync(new Inquiry());
+            
         }
     }
 }

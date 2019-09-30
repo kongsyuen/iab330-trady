@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using Trady.Data;
+using Trady.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,6 +10,10 @@ namespace Trady
     public partial class App : Application
     {
         static UserDatabase database;
+
+        public static User CurrentUser { get; set; }
+
+        public static string CurrentUserName { get; set; }
 
         public static UserDatabase Database
         {

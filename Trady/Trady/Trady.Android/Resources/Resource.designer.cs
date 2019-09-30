@@ -6816,6 +6816,22 @@ namespace Trady.Droid
 			
 			// aapt resource value: 0x7F080003
 			public const int META = 2131230723;
+			public const int listMode = 2131230821;
+			
+			// aapt resource value: 0x7F080066
+			public const int list_item = 2131230822;
+			
+			// aapt resource value: 0x7F080067
+			public const int main_appbar = 2131230823;
+			
+			// aapt resource value: 0x7F080068
+			public const int main_tablayout = 2131230824;
+			
+			// aapt resource value: 0x7F080069
+			public const int main_toolbar = 2131230825;
+			
+			// aapt resource value: 0x7F08006A
+			public const int main_viewpager = 2131230826;
 			
 			// aapt resource value: 0x7F08006B
 			public const int middle = 2131230827;
@@ -7095,9 +7111,7 @@ namespace Trady.Droid
 			
 			// aapt resource value: 0x7F080004
 			public const int SHIFT = 2131230724;
-			
-			// aapt resource value: 0x7F0800C7
-			public const int shortcut = 2131230919;
+			public const int search_voice_btn = 2131230918;
 			
 			// aapt resource value: 0x7F0800C8
 			public const int showCustom = 2131230920;
@@ -7158,54 +7172,106 @@ namespace Trady.Droid
 			
 			// aapt resource value: 0x7F080005
 			public const int SYM = 2131230725;
+			public const int selected = 2131230920;
+			
+			// aapt resource value: 0x7F0800C7
+			public const int select_dialog_listview = 2131230919;
+			
+			// aapt resource value: 0x7F0800C9
+			public const int shellcontent_appbar = 2131230921;
+			
+			// aapt resource value: 0x7F0800CA
+			public const int shellcontent_toolbar = 2131230922;
+			
+			// aapt resource value: 0x7F080004
+			public const int SHIFT = 2131230724;
+			
+			// aapt resource value: 0x7F0800CB
+			public const int shortcut = 2131230923;
+			
+			// aapt resource value: 0x7F0800CC
+			public const int showCustom = 2131230924;
+			
+			// aapt resource value: 0x7F0800CD
+			public const int showHome = 2131230925;
+			
+			// aapt resource value: 0x7F0800CE
+			public const int showTitle = 2131230926;
+			
+			// aapt resource value: 0x7F0800CF
+			public const int sliding_tabs = 2131230927;
+			
+			// aapt resource value: 0x7F0800D0
+			public const int smallLabel = 2131230928;
+			
+			// aapt resource value: 0x7F0800D1
+			public const int snackbar_action = 2131230929;
+			
+			// aapt resource value: 0x7F0800D2
+			public const int snackbar_text = 2131230930;
+			
+			// aapt resource value: 0x7F0800D3
+			public const int snap = 2131230931;
+			
+			// aapt resource value: 0x7F0800D4
+			public const int snapMargins = 2131230932;
+			
+			// aapt resource value: 0x7F0800D5
+			public const int spacer = 2131230933;
+			
+			// aapt resource value: 0x7F0800D6
+			public const int split_action_bar = 2131230934;
+			
+			// aapt resource value: 0x7F0800D7
+			public const int src_atop = 2131230935;
+			
+			// aapt resource value: 0x7F0800D8
+			public const int src_in = 2131230936;
+			
+			// aapt resource value: 0x7F0800D9
+			public const int src_over = 2131230937;
+			
+			// aapt resource value: 0x7F0800DA
+			public const int start = 2131230938;
 			
 			// aapt resource value: 0x7F0800DB
-			public const int tabMode = 2131230939;
+			public const int status_bar_latest_event_content = 2131230939;
 			
 			// aapt resource value: 0x7F0800DC
-			public const int tag_transition_group = 2131230940;
+			public const int stretch = 2131230940;
 			
 			// aapt resource value: 0x7F0800DD
-			public const int tag_unhandled_key_event_manager = 2131230941;
+			public const int submenuarrow = 2131230941;
 			
 			// aapt resource value: 0x7F0800DE
-			public const int tag_unhandled_key_listeners = 2131230942;
+			public const int submit_area = 2131230942;
+			
+			// aapt resource value: 0x7F080005
+			public const int SYM = 2131230725;
 			
 			// aapt resource value: 0x7F0800DF
-			public const int text = 2131230943;
+			public const int tabMode = 2131230943;
 			
 			// aapt resource value: 0x7F0800E0
-			public const int text2 = 2131230944;
-			
-			// aapt resource value: 0x7F0800E5
-			public const int textinput_counter = 2131230949;
-			
-			// aapt resource value: 0x7F0800E6
-			public const int textinput_error = 2131230950;
-			
-			// aapt resource value: 0x7F0800E7
-			public const int textinput_helper_text = 2131230951;
+			public const int tag_transition_group = 2131230944;
 			
 			// aapt resource value: 0x7F0800E1
-			public const int textSpacerNoButtons = 2131230945;
+			public const int tag_unhandled_key_event_manager = 2131230945;
 			
 			// aapt resource value: 0x7F0800E2
-			public const int textSpacerNoTitle = 2131230946;
+			public const int tag_unhandled_key_listeners = 2131230946;
 			
 			// aapt resource value: 0x7F0800E3
-			public const int textStart = 2131230947;
+			public const int text = 2131230947;
 			
 			// aapt resource value: 0x7F0800E4
-			public const int text_input_password_toggle = 2131230948;
-			
-			// aapt resource value: 0x7F0800E8
-			public const int time = 2131230952;
+			public const int text2 = 2131230948;
 			
 			// aapt resource value: 0x7F0800E9
-			public const int title = 2131230953;
+			public const int textinput_counter = 2131230953;
 			
 			// aapt resource value: 0x7F0800EA
-			public const int titleDividerNoCustom = 2131230954;
+			public const int textinput_error = 2131230954;
 			
 			// aapt resource value: 0x7F0800EB
 			public const int title_template = 2131230955;
@@ -7263,6 +7329,85 @@ namespace Trady.Droid
 			
 			// aapt resource value: 0x7F0800FD
 			public const int wrap_content = 2131230973;
+			public const int textinput_helper_text = 2131230955;
+			
+			// aapt resource value: 0x7F0800E5
+			public const int textSpacerNoButtons = 2131230949;
+			
+			// aapt resource value: 0x7F0800E6
+			public const int textSpacerNoTitle = 2131230950;
+			
+			// aapt resource value: 0x7F0800E7
+			public const int textStart = 2131230951;
+			
+			// aapt resource value: 0x7F0800E8
+			public const int text_input_password_toggle = 2131230952;
+			
+			// aapt resource value: 0x7F0800EC
+			public const int time = 2131230956;
+			
+			// aapt resource value: 0x7F0800ED
+			public const int title = 2131230957;
+			
+			// aapt resource value: 0x7F0800EE
+			public const int titleDividerNoCustom = 2131230958;
+			
+			// aapt resource value: 0x7F0800EF
+			public const int title_template = 2131230959;
+			
+			// aapt resource value: 0x7F0800F0
+			public const int toolbar = 2131230960;
+			
+			// aapt resource value: 0x7F0800F1
+			public const int top = 2131230961;
+			
+			// aapt resource value: 0x7F0800F2
+			public const int topPanel = 2131230962;
+			
+			// aapt resource value: 0x7F0800F3
+			public const int touch_outside = 2131230963;
+			
+			// aapt resource value: 0x7F0800F4
+			public const int transition_current_scene = 2131230964;
+			
+			// aapt resource value: 0x7F0800F5
+			public const int transition_layout_save = 2131230965;
+			
+			// aapt resource value: 0x7F0800F6
+			public const int transition_position = 2131230966;
+			
+			// aapt resource value: 0x7F0800F7
+			public const int transition_scene_layoutid_cache = 2131230967;
+			
+			// aapt resource value: 0x7F0800F8
+			public const int transition_transform = 2131230968;
+			
+			// aapt resource value: 0x7F0800F9
+			public const int uniform = 2131230969;
+			
+			// aapt resource value: 0x7F0800FA
+			public const int unlabeled = 2131230970;
+			
+			// aapt resource value: 0x7F0800FB
+			public const int up = 2131230971;
+			
+			// aapt resource value: 0x7F0800FC
+			public const int useLogo = 2131230972;
+			
+			// aapt resource value: 0x7F0800FD
+			public const int view_offset_helper = 2131230973;
+			
+			// aapt resource value: 0x7F0800FE
+			public const int visible = 2131230974;
+			
+			// aapt resource value: 0x7F0800FF
+			public const int volume_item_container = 2131230975;
+			
+			// aapt resource value: 0x7F080100
+			public const int withText = 2131230976;
+			
+			// aapt resource value: 0x7F080101
+			public const int wrap_content = 2131230977;
 			
 			static Id()
 			{
@@ -8509,9 +8654,6 @@ namespace Trady.Droid
 			// aapt resource value: 0x7F0E00C5
 			public const int CardView_Light = 2131624133;
 			
-			// aapt resource value: 0x7F0E0202
-			public const int collectionViewStyle = 2131624450;
-			
 			// aapt resource value: 0x7F0E00C6
 			public const int MainTheme = 2131624134;
 			
@@ -8523,6 +8665,9 @@ namespace Trady.Droid
 			
 			// aapt resource value: 0x7F0E00C9
 			public const int Platform_AppCompat_Light = 2131624137;
+			
+			// aapt resource value: 0x7F0E0206
+			public const int collectionViewStyle = 2131624454;
 			
 			// aapt resource value: 0x7F0E00CA
 			public const int Platform_MaterialComponents = 2131624138;

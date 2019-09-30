@@ -15,6 +15,11 @@ namespace Trady.Views
         public Profile()
         {
             InitializeComponent();
+
+            userName.Text = App.CurrentUser.UserName;
+
+            userEmail.Text = App.CurrentUser.Email;
+
         }
     }
 }
