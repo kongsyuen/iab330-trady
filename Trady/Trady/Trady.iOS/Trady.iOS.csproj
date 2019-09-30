@@ -144,4 +144,11 @@
       <Name>Trady</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\A0001.png" />
+    <BundleResource Include="Resources\A0002.png" />
+    <BundleResource Include="Resources\A0003.png" />
+    <BundleResource Include="Resources\A0004.png" />
+    <BundleResource Include="Resources\A0005.png" />
+  </ItemGroup>
 </Project>

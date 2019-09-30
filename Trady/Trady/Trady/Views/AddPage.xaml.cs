@@ -49,5 +49,6 @@ namespace Trady.Views
         {
             await Navigation.PushAsync(new HomePage());
         }
+        
     }
 }

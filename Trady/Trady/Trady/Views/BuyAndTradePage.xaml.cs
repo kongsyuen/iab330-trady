@@ -26,6 +26,11 @@ namespace Trady.Views
         {
             await Navigation.PushAsync(new AddPage());
         }
+        void Handle_ItemTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
+        {
+            var items = e.Item as Item;
+            Navigation.PushAsync(new DetailPage(items.Information, items.Date));
+        }
         #region "LoadData"
         protected IList<Item> LoadData()
         {
