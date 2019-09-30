@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Trady.Views.Inquiry" Title="ALL"
-             xmlns:viewModel="clr-namespace:Trady.ViewModels">
+             xmlns:viewModel="clr-namespace:Trady.ViewModels"
+             xmlns:controls="clr-namespace:Trady.Controls">
     <ContentPage.BindingContext>
         <viewModel:InquiryPageViewModel/>
     </ContentPage.BindingContext>
@@ -19,7 +20,11 @@
             <ListView x:Name="PropertyList" AbsoluteLayout.LayoutBounds=".5,.995,1,.65" AbsoluteLayout.LayoutFlags="All" ItemsSource="{Binding InquiryList}" ItemTapped="ListView_ItemTapped" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ImageCell TextColor="HotPink" Text="{Binding InquiryName}" Detail="{Binding InquiryDate}" ImageSource="{Binding InquiryImage}" />
+                        <!--<ImageCell Text="{Binding Information}" Detail="{Binding Date}" ImageSource="{Binding Photo}" />-->
+                        <controls:ItemCell
+                            Information="{Binding InquiryName}"
+                            Photo="{Binding InquiryImage}"
+                            Date="{Binding InquiryDate}" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

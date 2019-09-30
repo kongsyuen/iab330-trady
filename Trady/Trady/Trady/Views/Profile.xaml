@@ -13,13 +13,15 @@
             <BoxView Color="#BCC5D3" HeightRequest="120" WidthRequest="500" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
             <BoxView Color="#E4E4E5" HeightRequest="450" WidthRequest="500" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
         </StackLayout>
-        <Image Source="Anh.png" AbsoluteLayout.LayoutBounds=".48,.09,130,100" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <Image Source="logo330.png" AbsoluteLayout.LayoutBounds=".48,.09,130,100" AbsoluteLayout.LayoutFlags="PositionProportional"/>
         <Label Text="Edit" TextColor="#747474" AbsoluteLayout.LayoutBounds="1.15,0.02,100,100" FontSize="20" AbsoluteLayout.LayoutFlags="PositionProportional"/>
         <Label Text="Thomas" AbsoluteLayout.LayoutBounds=".59,.27,130,100" FontSize="18" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
         <Label Text="Student, Brisbane" AbsoluteLayout.LayoutBounds=".48,.32,130,100" FontSize="16" AbsoluteLayout.LayoutFlags="PositionProportional"/>
         <Label Text="2" AbsoluteLayout.LayoutBounds=".17,.39,100,100" FontSize="16" AbsoluteLayout.LayoutFlags="PositionProportional"/>
         <Label Text="My Post" AbsoluteLayout.LayoutBounds=".1,.45,100,100" FontSize="16" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <Button Text="click"  AbsoluteLayout.LayoutBounds=".1,.45,100,100"/>
+
 
         <Label Text="173" AbsoluteLayout.LayoutBounds=".56,.39,100,100" FontSize="16" AbsoluteLayout.LayoutFlags="PositionProportional"/>
         <Label Text="Reviews" AbsoluteLayout.LayoutBounds=".5,.45,100,100" FontSize="16" AbsoluteLayout.LayoutFlags="PositionProportional"/>
