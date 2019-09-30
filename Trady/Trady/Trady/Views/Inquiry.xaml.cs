@@ -20,7 +20,7 @@ namespace Trady.Views
         {
             var inquiryItem = e.Item as Inquiries;
 
-            await Navigation.PushAsync(new InquiryDetail(inquiryItem.InquiryName, inquiryItem.InquiryDate, inquiryItem.InquiryDetail));
+            await Navigation.PushAsync(new InquiryDetail(inquiryItem.InquiryName, inquiryItem.InquiryDate, inquiryItem.InquiryDetail, inquiryItem.InquiryImage));
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

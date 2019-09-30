@@ -21,5 +21,6 @@ namespace Trady.Views
             userEmail.Text = App.CurrentUser.Email;
 
         }
+
     }
 }

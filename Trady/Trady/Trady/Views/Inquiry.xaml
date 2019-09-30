@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Trady.Views.Inquiry" Title="ALL"
-             xmlns:viewModel="clr-namespace:Trady.ViewModels">
+             xmlns:viewModel="clr-namespace:Trady.ViewModels"
+             xmlns:controls="clr-namespace:Trady.Controls">
     <ContentPage.BindingContext>
         <viewModel:InquiryPageViewModel/>
     </ContentPage.BindingContext>
@@ -19,25 +20,11 @@
             <ListView x:Name="PropertyList" AbsoluteLayout.LayoutBounds=".5,.995,1,.65" AbsoluteLayout.LayoutFlags="All" ItemsSource="{Binding InquiryList}" ItemTapped="ListView_ItemTapped" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell>
-                            <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="75"/>
-                                    <RowDefinition Height="25"/>
-                                    <RowDefinition Height="0"/>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="90"/>
-                                    <ColumnDefinition Width="135"/>
-                                    <ColumnDefinition Width="125"/>
-                                </Grid.ColumnDefinitions>
-                                <Image Source="photologo.png" HorizontalOptions="EndAndExpand" HeightRequest="150" Grid.Column="2" Grid.RowSpan="2"/>
-                                <Label FontSize="20" TextColor="Black" Text="Category:" Grid.Column="0" Grid.Row="0"/>
-                                <Label FontSize="20" TextColor="Black" Text="Date: " Grid.Column="0" Grid.Row="1"/>
-                                <Label FontSize="20" TextColor="Black" Text="{Binding InquiryName}" Grid.Column="1" Grid.Row="0"/>
-                                <Label FontSize="20" TextColor="Black" Text="{Binding InquiryDate}" Grid.Column="1" Grid.Row="1"/>
-                            </Grid>
-                        </ViewCell>
+                        <!--<ImageCell Text="{Binding Information}" Detail="{Binding Date}" ImageSource="{Binding Photo}" />-->
+                        <controls:ItemCell
+                            Information="{Binding InquiryName}"
+                            Photo="{Binding InquiryImage}"
+                            Date="{Binding InquiryDate}" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
