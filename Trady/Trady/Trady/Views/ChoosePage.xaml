@@ -18,18 +18,20 @@
                        Source="city01.jpg"
                        Aspect="AspectFill" />
                 <Label Text="WELCOME USER" HorizontalTextAlignment="Center"/>
-                <Button Text="Buy N Trade"
+                <ImageButton 
                         Clicked="Button_Clicked"
-                        TextColor="white"
+                        Source="Capture.png"
+                        HeightRequest="130"
                         BorderWidth="1"
                         BorderColor="#6368F0"
                         BackgroundColor="#6368F0"/>
-                <Button Text="Inquiries"
+                <ImageButton 
                         Clicked="Inquiries_Clicked"
-                        TextColor="white"
+                        Source="Capturedas.png"
+                        HeightRequest="130"
                         BorderWidth="1"
-                        BorderColor="#6368F0"
-                        BackgroundColor="#6368F0"/>
+                        BorderColor="#FF0F37"
+                        BackgroundColor="#FF0F37"/>
 
 
             </StackLayout>
