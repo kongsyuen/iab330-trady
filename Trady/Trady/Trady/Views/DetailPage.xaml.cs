@@ -1,22 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Text;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+using Trady.Views;
+
 
 namespace Trady.Views
 {
+    
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DetailPage : ContentPage
     {
-        private string date;
-
-        public DetailPage(string information)
+        public DetailPage(string Information, string date)
         {
             InitializeComponent();
-        }
 
-        public DetailPage(string information, string date) : this(information)
-        {
-            this.date = date;
+            Title = Information;
+
+            
+            
         }
     }
 }
