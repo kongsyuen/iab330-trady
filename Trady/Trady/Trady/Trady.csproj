@@ -22,6 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\DetailPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Update="Views\Profile.xaml.cs">
       <DependentUpon>Profile.xaml</DependentUpon>
     </Compile>

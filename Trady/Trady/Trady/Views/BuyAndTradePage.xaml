@@ -8,7 +8,8 @@
 
             <Image x:Name="background" Source="city01.jpg" Aspect="AspectFill" />
             <SearchBar Placeholder="Search" SearchButtonPressed="OnSearchBarButtonPressed" />
-            <ListView x:Name="listview">
+            <ListView x:Name="listview"
+                      ItemTapped="Handle_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ImageCell Text="{Binding Information}" Detail="{Binding Date}" ImageSource="{Binding Photo}" />
