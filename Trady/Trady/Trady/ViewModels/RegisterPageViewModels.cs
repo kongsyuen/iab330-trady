@@ -82,9 +82,22 @@ namespace Trady.ViewModels
         {
             try
             {
-                if (UserName.Length < 6 || Email.Length == 0 || Password.Length < 6)
+                if (UserName.Length < 6 )
                 {
-                    await Application.Current.MainPage.DisplayAlert("Sorry!", "Invalid!", "OK");
+                    await Application.Current.MainPage.DisplayAlert("Sorry!", "Username is invalid or not given!", "OK");
+                    return;
+                }
+
+                if (Email.Length == 0  && (!(Email.Contains("@")) ))
+                {
+                    await Application.Current.MainPage.DisplayAlert("Sorry!", "Please type in your email!", "OK");
+                    return;
+                }
+
+                if (Password.Length < 6)
+                {
+                    await Application.Current.MainPage.DisplayAlert("Sorry!", "Password is invalid or not given!", "OK");
+                    return;
                 }
                 else
                 {

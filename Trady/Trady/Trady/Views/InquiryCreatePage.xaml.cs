@@ -58,12 +58,12 @@ namespace Trady.Views
 
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
-            _newInquiry.InquiryName = InquiryName.Text;
-            _newInquiry.InquiryDate = InquiryDate.Text;
-            _newInquiry.InquiryDetail = InquiryDetail.Text;
-            _inquiryList.InquiryList.Add(_newInquiry);
+            ////_newInquiry.InquiryName = InquiryName.Text;
+            ////_newInquiry.InquiryDate = InquiryDate.Text;
+            ////_newInquiry.InquiryDetail = InquiryDetail.Text;
+            ////_inquiryList.InquiryList.Add(_newInquiry);
+         
             await Navigation.PushAsync(new Inquiry());
-            
         }
     }
 }

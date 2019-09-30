@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Trady.Views.InquiryDetail">
+             x:Class="Trady.Views.InquiryDetail" Title="{Binding InquiryName}">
     <ContentPage.Content>
         <ScrollView>
             <Grid>
@@ -19,7 +19,7 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Image Source="photologo.png" Grid.Row="0" Aspect="Fill" Grid.ColumnSpan="3"/>
+                <Image x:Name="ImageSource" Grid.Row="0" Aspect="Fill" Grid.ColumnSpan="3"/>
                 <StackLayout Grid.Row="1" BackgroundColor="LightBlue" Grid.ColumnSpan="3">
                     <Label x:Name="CategoryName" FontSize="30" HorizontalOptions="Center" TextColor="Black"/>
                     <Label x:Name="DateName" FontSize="30" HorizontalOptions="Center" TextColor="Black"/>
