@@ -86,17 +86,21 @@ namespace Trady.ViewModels
 
             try
             {
-                User user = await App.Database.GetUserAsync(UserName, Password);
-
-                if (user != null)
-                {
-                    App.CurrentUser = user;
-                    await Application.Current.MainPage.DisplayAlert("Correct", "Correct credentials entered!", "OK");
-                    Application.Current.MainPage = new NavigationPage(new Views.HomePage());
-                }
+                if (UserName.Length <= 6 || Password.Length <= 6) await Application.Current.MainPage.DisplayAlert("Oops!", "Username and password must be longer!", "OK");
                 else
                 {
-                    await Application.Current.MainPage.DisplayAlert("Oops!", "Incorrect credentials entered!", "OK");
+                    User user = await App.Database.GetUserAsync(UserName, Password);
+
+                    if (user != null)
+                    {
+                        App.CurrentUser = user;
+                        await Application.Current.MainPage.DisplayAlert("Correct", "Correct credentials entered!", "OK");
+                        Application.Current.MainPage = new NavigationPage(new Views.HomePage());
+                    }
+                    else
+                    {
+                        await Application.Current.MainPage.DisplayAlert("Oops!", "Incorrect credentials entered!", "OK");
+                    }
                 }
 
             }
