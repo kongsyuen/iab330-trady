@@ -13,7 +13,7 @@
         <AbsoluteLayout>
             <Image Source="image1.jpg" Aspect="Fill"/>
 
-            <Image Source="logo330.png" AbsoluteLayout.LayoutBounds=".5,.01,.3,.3" AbsoluteLayout.LayoutFlags="All"/>
+            <Image Source="logo330.png" AbsoluteLayout.LayoutBounds=".5,.03,.3,.2" AbsoluteLayout.LayoutFlags="All"/>
 
             <Frame BorderColor="Red"  CornerRadius="50" BackgroundColor="Black" Opacity="0.6" AbsoluteLayout.LayoutBounds=".5,.27,.5,.07" AbsoluteLayout.LayoutFlags="All" Padding="0,0,0,0">
                 <Label Text="TRADY" FontSize="35" FontAttributes="Bold" TextColor="DeepPink" HorizontalOptions="Center" VerticalOptions="Center"/>

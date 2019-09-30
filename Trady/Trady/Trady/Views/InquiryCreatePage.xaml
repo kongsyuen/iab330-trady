@@ -17,18 +17,18 @@
             <Frame CornerRadius="25" AbsoluteLayout.LayoutBounds=".5,.4,.9,.08" AbsoluteLayout.LayoutFlags="All" Padding="150,5,17,5" BackgroundColor="MediumPurple">
                 <Picker SelectedIndexChanged="CategoryPicker_SelectedIndexChanged" x:Name="CategoryPicker"  BackgroundColor="White"/>
             </Frame>
-            <Label Text="CATEGORY: " FontSize="25" TextColor="Black" AbsoluteLayout.LayoutBounds=".12,.402,.357,.05" AbsoluteLayout.LayoutFlags="All"/>
+            <Label  x:Name="InquiryName" Text="CATEGORY: " FontSize="25" TextColor="Black" AbsoluteLayout.LayoutBounds=".12,.402,.357,.05" AbsoluteLayout.LayoutFlags="All"/>
             <Frame CornerRadius="25" AbsoluteLayout.LayoutBounds=".5,.52,.9,.08" AbsoluteLayout.LayoutFlags="All" Padding="150,5,17,5" BackgroundColor="MediumPurple">
                 <Entry BackgroundColor="White"/>
             </Frame>
-            <Label Text="POST TITLE:" TextColor="Black" FontSize="25" AbsoluteLayout.LayoutBounds=".12,.518,.357,.05" AbsoluteLayout.LayoutFlags="All"/>
+            <Label x:Name="InquiryTitle" Text="POST TITLE:" TextColor="Black" FontSize="25" AbsoluteLayout.LayoutBounds=".12,.518,.357,.05" AbsoluteLayout.LayoutFlags="All"/>
             <Frame CornerRadius="25" AbsoluteLayout.LayoutBounds=".1,.63,.5,.08" AbsoluteLayout.LayoutFlags="All" Padding="90,5,17,5" BackgroundColor="MediumPurple">
                 <DatePicker BackgroundColor="White"/>
             </Frame>
-            <Label Text="DATE:" TextColor="Black" FontSize="25" AbsoluteLayout.LayoutBounds=".09,.625,.18,.05" AbsoluteLayout.LayoutFlags="All"/>
+            <Label x:Name="InquiryDate" Text="DATE:" TextColor="Black" FontSize="25" AbsoluteLayout.LayoutBounds=".09,.625,.18,.05" AbsoluteLayout.LayoutFlags="All"/>
             <Button Clicked="Button_Clicked" CornerRadius="25" TextColor="WhiteSmoke" FontSize="20" BackgroundColor="DeepPink" Text="UPLOAD PHOTOS"  AbsoluteLayout.LayoutBounds=".92,.63,.39,.085" AbsoluteLayout.LayoutFlags="All" Padding="0,0,0,0"/>
-            <Editor Placeholder="COMMENT" BackgroundColor="White" AbsoluteLayout.LayoutBounds=".5,.79,.89,.15" AbsoluteLayout.LayoutFlags="All"/>
-            <Button Text="POST" FontSize="35" TextColor="WhiteSmoke" CornerRadius="20" BackgroundColor="Red" AbsoluteLayout.LayoutBounds=".5,.89,.89,.07" AbsoluteLayout.LayoutFlags="All" Padding="0,0,0,0"/>
+            <Editor x:Name="InquiryDetail" Placeholder="COMMENT" BackgroundColor="White" AbsoluteLayout.LayoutBounds=".5,.79,.89,.15" AbsoluteLayout.LayoutFlags="All"/>
+            <Button Text="POST" Clicked="Button_Clicked_1" FontSize="35" TextColor="WhiteSmoke" CornerRadius="20" BackgroundColor="Red" AbsoluteLayout.LayoutBounds=".5,.89,.89,.07" AbsoluteLayout.LayoutFlags="All" Padding="0,0,0,0"/>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
