@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trady.Controls.ItemCell">
+   <ViewCell.ContextActions>
+    	<MenuItem Text="More" Clicked="OnMore_Click" />
+        <MenuItem Text="Delete" Clicked="OnDelete_Click"
+            IsDestructive="True" />
+    </ViewCell.ContextActions>
+	<StackLayout Orientation="Horizontal"
+			VerticalOptions="Start">
+		<Image x:Name="imgPhoto" Source="A0001.jpg" 
+			HeightRequest="80"
+			WidthRequest="80"/>
+		<StackLayout Orientation="Vertical">
+			<Label x:Name="lblInformation" Text="Second Hand" 
+				FontSize="22"/>
+			<StackLayout Orientation="Horizontal"
+				HorizontalOptions="StartAndExpand">
+				<Label x:Name="lblCategory" Text="Accessories"/>
+				<Label x:Name="lblDate" Text="29.09.2019"/>
+			</StackLayout >
+		</StackLayout>
+  	</StackLayout>
+</ViewCell>

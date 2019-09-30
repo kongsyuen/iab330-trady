@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -149,7 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Trady\Trady.csproj">
-      <Project>{5A372520-0550-436A-BA5C-837682B75A89}</Project>
+      <Project>{2D211BD1-8A07-4F84-8537-6FCA144C87CD}</Project>
       <Name>Trady</Name>
     </ProjectReference>
   </ItemGroup>
