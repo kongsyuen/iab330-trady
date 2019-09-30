@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XLabs.Ioc;
+using XLabs.Platform.Services.Media;
 
 
 namespace Trady.Views
@@ -10,6 +12,7 @@ namespace Trady.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AddPage : ContentPage
     {
+        IMediaPicker mediaPicker;
         public AddPage()
         {
             InitializeComponent();
