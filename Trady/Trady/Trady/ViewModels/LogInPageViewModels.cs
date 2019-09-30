@@ -88,11 +88,9 @@ namespace Trady.ViewModels
             {
                 User user = await App.Database.GetUserAsync(UserName, Password);
 
-                if (UserName.Length <= 6 || Password.Length <= 6) await Application.Current.MainPage.DisplayAlert("Oops!", "Username and password must be longer!", "OK");
+                if (UserName.Length < 6 || Password.Length < 6) await Application.Current.MainPage.DisplayAlert("Oops!", "Username and password must be longer!", "OK");
                 else
                 {
-                    User user = await App.Database.GetUserAsync(UserName, Password);
-
                     if (user != null)
                     {
                         App.CurrentUser = user;

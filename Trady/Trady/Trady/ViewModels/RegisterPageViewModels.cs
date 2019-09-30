@@ -80,22 +80,28 @@ namespace Trady.ViewModels
 
         private async void SignUpClicked(object obj)
         {
-
-            if (UserName == null || Email == null || Password == null)
+            try
             {
-                await Application.Current.MainPage.DisplayAlert("Sorry!", "Please fill in all of the fields!", "OK");
-            }
-            else
-            {
-                User user = new User
+                if (UserName.Length < 6 || Email.Length == 0 || Password.Length < 6)
                 {
-                    UserName = UserName,
-                    Email = Email,
-                    Password = Password
-                };
+                    await Application.Current.MainPage.DisplayAlert("Sorry!", "Invalid!", "OK");
+                }
+                else
+                {
+                    User user = new User
+                    {
+                        UserName = UserName,
+                        Email = Email,
+                        Password = Password
+                    };
 
-                await App.Database.SaveUserAsync(user);
-                Application.Current.MainPage = new NavigationPage(new Views.LogInPage());
+                    await App.Database.SaveUserAsync(user);
+                    Application.Current.MainPage = new NavigationPage(new Views.LogInPage());
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Sorry! There was an error: {ex.Message}");
             }
 
         }
