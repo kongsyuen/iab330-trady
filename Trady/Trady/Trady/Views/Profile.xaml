@@ -20,8 +20,6 @@
         <Label Text="Student, Brisbane" AbsoluteLayout.LayoutBounds=".48,.32,130,100" FontSize="16" AbsoluteLayout.LayoutFlags="PositionProportional"/>
         <Label Text="2" AbsoluteLayout.LayoutBounds=".17,.39,100,100" FontSize="16" AbsoluteLayout.LayoutFlags="PositionProportional"/>
         <Label Text="My Post" AbsoluteLayout.LayoutBounds=".1,.45,100,100" FontSize="16" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-        <Button Text="click"  AbsoluteLayout.LayoutBounds=".1,.45,100,100"/>
-
 
         <Label Text="173" AbsoluteLayout.LayoutBounds=".56,.39,100,100" FontSize="16" AbsoluteLayout.LayoutFlags="PositionProportional"/>
         <Label Text="Reviews" AbsoluteLayout.LayoutBounds=".5,.45,100,100" FontSize="16" AbsoluteLayout.LayoutFlags="PositionProportional"/>
