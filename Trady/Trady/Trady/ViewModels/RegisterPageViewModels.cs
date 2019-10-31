@@ -101,15 +101,25 @@ namespace Trady.ViewModels
                 }
                 else
                 {
-                    User user = new User
+                    User used = await App.Database.UsernameCollision(UserName);
+                    if (used != null)
                     {
-                        UserName = UserName,
-                        Email = Email,
-                        Password = Password
-                    };
+                        await Application.Current.MainPage.DisplayAlert("Sorry!", "Username is not avaialble!", "OK");
+                        Debug.WriteLine(UserName);
+                        return;
+                    }
+                    else
+                    {
+                        User user = new User
+                        {
+                            UserName = UserName,
+                            Email = Email,
+                            Password = Password
+                        };
 
-                    await App.Database.SaveUserAsync(user);
-                    Application.Current.MainPage = new NavigationPage(new Views.LogInPage());
+                        await App.Database.SaveUserAsync(user);
+                        Application.Current.MainPage = new NavigationPage(new Views.LogInPage());
+                    }
                 }
             }
             catch (Exception ex)

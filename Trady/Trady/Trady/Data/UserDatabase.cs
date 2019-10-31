@@ -30,17 +30,12 @@ namespace Trady.Data
         }
 
         //Username collision detection
-        //public bool UsernameCollision(string userName)
-        //{
-        //    if ((database.Table<User>()
-        //                    .Where(i => i.UserName == userName)
-        //                    .FirstOrDefaultAsync()) == null)
-
-        //    {
-        //        return false;
-        //    }
-        //    return true;
-        //}
+        public Task<User> UsernameCollision(string userName)
+        {
+            return database.Table<User>()
+                            .Where(i => i.UserName == userName)
+                            .FirstOrDefaultAsync();
+        }
 
         public Task<Inquiries> GetInquiryAsync(string InquiryName)
         {
