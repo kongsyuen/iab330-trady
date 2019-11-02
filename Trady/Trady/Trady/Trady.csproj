@@ -20,6 +20,7 @@
     <PackageReference Include="XLabs.Platform" Version="2.0.5782" />
     <PackageReference Include="XLabs.Forms" Version="2.0.5782" />
     <PackageReference Include="System.Runtime.InteropServices.RuntimeInformation" Version="4.3.0" />
+    <PackageReference Include="XLabs.IoC" Version="2.0.5782" />
   </ItemGroup>
 
   <ItemGroup>

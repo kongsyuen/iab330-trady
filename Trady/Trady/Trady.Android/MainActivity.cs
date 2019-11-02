@@ -7,6 +7,8 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using XLabs.Platform.Services.Media;
+using Trady.Interface;
+using Trady.SQLiteRepository;
 
 namespace Trady.Droid
 {
@@ -18,6 +20,16 @@ namespace Trady.Droid
             SetIoc();
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
+
+
+            var databasePath =
+                System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments), "database.db3");
+
+            var resolverContainer = new XLabs.Ioc.Unity.UnityDependencyContainer();
+
+            resolverContainer.Register<IItemRepository>(new ItemRepository(databasePath));
+
+            XLabs.Ioc.Resolver.SetResolver(resolverContainer.GetResolver());
 
             base.OnCreate(savedInstanceState);
 

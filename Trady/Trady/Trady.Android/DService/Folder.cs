@@ -1,9 +1,9 @@
 ﻿using System;
+using Trady.Droid.DService;
 using Trady.Interface;
-using Trady.iOS.DService;
 
 [assembly: Xamarin.Forms.Dependency(typeof(Folder))]
-namespace Trady.iOS.DService
+namespace Trady.Droid.DService
 {
     public class Folder : IFolder
     {

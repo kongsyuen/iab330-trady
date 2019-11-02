@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Trady.Interface;
+using Trady.SQLiteRepository;
 using UIKit;
 
 namespace Trady.iOS
@@ -22,6 +24,16 @@ namespace Trady.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+
+            var databasePath =
+                System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "database.db3");
+
+            var resolverContainer = new XLabs.Ioc.Unity.UnityDependencyContainer();
+
+            resolverContainer.Register<IItemRepository>(new ItemRepository(databasePath));
+
+            XLabs.Ioc.Resolver.SetResolver(resolverContainer.GetResolver());
+
             Rg.Plugins.Popup.Popup.Init();
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
