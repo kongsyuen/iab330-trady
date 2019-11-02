@@ -34,6 +34,13 @@ namespace Trady
             var sqlite = new SQLite.SQLiteConnection(databasePath);
             InitializeComponent();
 
+
+            IItemRepository actorRepository =
+                Resolver.Resolve<IItemRepository>();
+
+            actorRepository.DeleteAll();
+            actorRepository.InsertAll(LoadData());
+
             MainPage = new NavigationPage(new Views.LogInPage());
         }
 
