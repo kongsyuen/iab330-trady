@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Trady.Interface;
 using Trady.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XLabs.Ioc;
 
 namespace Trady.Views
 {
@@ -14,9 +16,24 @@ namespace Trady.Views
     {
         public BuyAndTradePage()
         {
+            IItemRepository itemRepository;
             InitializeComponent();
             listview.ItemsSource = LoadData();
+
+            itemRepository =
+                Resolver.Resolve<IItemRepository>();
+
         }
+
+
+        protected override void OnAppearing()
+        {
+            listview.ItemsSource = itemRepository.GetAll();
+            base.OnAppearing();
+        }
+
+
+
         void OnSearchBarButtonPressed(object sender, EventArgs e)
         {
             

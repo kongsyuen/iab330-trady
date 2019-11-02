@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:local="clr-namespace:Trady" 
-             xmlns:controls="clr-namespace:Trady.Controls"
-             mc:Ignorable="d"
-             x:Class="Trady.Views.BuyAndTradePage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Trady" xmlns:controls="clr-namespace:Trady.Controls" mc:Ignorable="d" x:Class="Trady.Views.BuyAndTradePage">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Clicked="AddPage_Clicked" />
     </ContentPage.ToolbarItems>
@@ -15,17 +8,22 @@
 
             <Image x:Name="background" Source="city01.jpg" Aspect="AspectFill" />
             <SearchBar Placeholder="Search" SearchButtonPressed="OnSearchBarButtonPressed" />
-            <ListView x:Name="listview"
-                      HasUnevenRows="true"
-                      ItemTapped="Handle_ItemTapped">
+            <ListView x:Name="listview" HasUnevenRows="true" ItemTapped="Handle_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <!--<ImageCell Text="{Binding Information}" Detail="{Binding Date}" ImageSource="{Binding Photo}" />-->
-                        <controls:ItemCell
-                            Information="{Binding Information}"
-                            Photo="{Binding Photo}"
-                            Category="{Binding Category}"
-                            Date="{Binding Date}" />
+                        <ViewCell>
+
+
+                            <!--<ImageCell Text="{Binding Information}" Detail="{Binding Date}" ImageSource="{Binding Photo}" />-->
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Edit" Clicked="Edit_Clicked" CommandParameter="{Binding .}" />
+                                <MenuItem Text="Delete" Clicked="Delete_Clicked" CommandParameter="{Binding .}" IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding Photo}" HeightRequest="60" WidthRequest="60" />
+                                <Label Text="{Binding Name}" />
+                            </StackLayout>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
