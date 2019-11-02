@@ -14,9 +14,10 @@ namespace Trady.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BuyAndTradePage : ContentPage
     {
+        IItemRepository itemRepository;
+
         public BuyAndTradePage()
         {
-            IItemRepository itemRepository;
             InitializeComponent();
             listview.ItemsSource = LoadData();
 
@@ -43,11 +44,14 @@ namespace Trady.Views
         {
             await Navigation.PushAsync(new AddPage());
         }
-        void Handle_ItemTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
+        async void Handle_ItemTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
         {
             var items = e.Item as Item;
-            Navigation.PushAsync(new DetailPage(items.Information, items.Date));
+            await Navigation.PushAsync(new DetailPage(items.Information, items.Date));
         }
+
+        
+
         #region "LoadData"
         protected IList<Item> LoadData()
         {
