@@ -29,6 +29,9 @@ namespace Trady
 
         public App()
         {
+
+            var databasePath = "";
+            var sqlite = new SQLite.SQLiteConnection(databasePath);
             InitializeComponent();
 
             MainPage = new NavigationPage(new Views.LogInPage());
