@@ -70,6 +70,7 @@ namespace Trady
             var items = new List<Item>();
             items.Add(new Item
             {
+                ID = 0,
                 Information = "Second Hand",
                 Category = "Accessories",
                 Date = "29.09.2019",
@@ -78,7 +79,7 @@ namespace Trady
 
             items.Add(new Item
             {
-
+                ID = 1,
                 Information = "Adoption by caring people",
 
                 Category = "Pet",
@@ -90,9 +91,8 @@ namespace Trady
 
             items.Add(new Item
             {
-
+                ID = 2,
                 Information = "Sell",
-
                 Category = "Transportation",
                 Date = "29.09.2019",
                 Photo = "A0003.png"
@@ -100,7 +100,7 @@ namespace Trady
 
             items.Add(new Item
             {
-
+                ID = 3,
                 Information = "Second hand for sell",
 
                 Category = "Accessories",
@@ -111,7 +111,7 @@ namespace Trady
 
             items.Add(new Item
             {
-
+                ID = 4,
                 Information = "New product sell",
 
                 Category = "Household",

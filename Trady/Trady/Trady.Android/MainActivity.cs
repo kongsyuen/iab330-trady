@@ -9,6 +9,7 @@ using Android.OS;
 using XLabs.Platform.Services.Media;
 using Trady.Interface;
 using Trady.SQLiteRepository;
+using XLabs.Ioc;
 
 namespace Trady.Droid
 {
@@ -26,9 +27,8 @@ namespace Trady.Droid
                 System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments), "database.db3");
 
             var resolverContainer = new XLabs.Ioc.Unity.UnityDependencyContainer();
-
+            Resolver.ResetResolver();
             resolverContainer.Register<IItemRepository>(new ItemRepository(databasePath));
-
             XLabs.Ioc.Resolver.SetResolver(resolverContainer.GetResolver());
 
             base.OnCreate(savedInstanceState);
