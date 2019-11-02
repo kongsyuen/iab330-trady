@@ -26,6 +26,8 @@
                 <Button Grid.Row="2" Grid.ColumnSpan="3" Text="Profile" BackgroundColor="LightSkyBlue"/>
                 <Label x:Name="InfoName" FontSize="25" Grid.Row="3" TextColor="Black" BackgroundColor="LightPink" Grid.ColumnSpan="3" LineBreakMode="WordWrap"/>
             </Grid>-->
+            <WebView x:Name="webview"/>
         </ScrollView>
+
     </ContentPage.Content>
 </ContentPage>

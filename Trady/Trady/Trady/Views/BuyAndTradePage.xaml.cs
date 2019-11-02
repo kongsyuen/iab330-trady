@@ -14,7 +14,7 @@ namespace Trady.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BuyAndTradePage : ContentPage
     {
-        IItemRepository itemRepository;
+                    IItemRepository itemRepository;
 
         public BuyAndTradePage()
         {
@@ -47,7 +47,7 @@ namespace Trady.Views
         async void Handle_ItemTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
         {
             var items = e.Item as Item;
-            await Navigation.PushAsync(new DetailPage(items.Information, items.Date));
+            await Navigation.PushAsync(new DetailPage(items));
         }
 
         
