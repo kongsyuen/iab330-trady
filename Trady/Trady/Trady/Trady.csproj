@@ -80,4 +80,8 @@
     <Folder Include="Controls\" />
     <Folder Include="Interface\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Trady.Interface\Trady.Interface.csproj" />
+    <ProjectReference Include="..\..\Trady.Models\Trady.Models.csproj" />
+  </ItemGroup>
 </Project>

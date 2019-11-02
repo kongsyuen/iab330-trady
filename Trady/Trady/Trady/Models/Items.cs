@@ -3,9 +3,9 @@ using Xamarin.Forms;
 
 namespace Trady.Models
 {
-    public class Item
+    public class Items
     {
-        public Item()
+        public Items()
         {
         }
 

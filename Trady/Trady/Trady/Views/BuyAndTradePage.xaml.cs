@@ -40,7 +40,7 @@ namespace Trady.Views
                 Information = "Second Hand",
                 Category = "Accessories",
                 Date = "29.09.2019",
-                Photo = ImageSource.FromFile("A0001.png")
+                Photo = "A0001.png"
             });
 
             items.Add(new Item
@@ -51,7 +51,7 @@ namespace Trady.Views
                 Category = "Pet",
                 Date = "29.09.2019",
 
-                Photo = ImageSource.FromFile("A0002.png")
+                Photo = "A0002.png"
 
             });
 
@@ -62,7 +62,7 @@ namespace Trady.Views
 
                 Category = "Transportation",
                 Date = "29.09.2019",
-                Photo = ImageSource.FromFile("A0003.png")
+                Photo = "A0003.png"
             });
 
             items.Add(new Item
@@ -73,7 +73,7 @@ namespace Trady.Views
                 Category = "Accessories",
                 Date = "29.09.2019",
 
-                Photo = ImageSource.FromFile("A0004.png")
+                Photo = "A0004.png"
             });
 
             items.Add(new Item
@@ -84,7 +84,7 @@ namespace Trady.Views
                 Category = "Household",
                 Date = "29.09.2019",
 
-                Photo = ImageSource.FromFile("A0005.png")
+                Photo = "A0005.png"
             });
             return items;
         }
