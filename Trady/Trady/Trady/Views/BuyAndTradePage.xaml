@@ -20,7 +20,7 @@
                             </ViewCell.ContextActions>
                             <StackLayout Orientation="Horizontal">
                                 <Image Source="{Binding Photo}" HeightRequest="60" WidthRequest="60" />
-                                <Label Text="{Binding Name}" />
+                                <Label Text="{Binding Information}" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

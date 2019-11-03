@@ -39,16 +39,16 @@ namespace Trady.Views
         //    imgPhoto.Source = mediaFile.Path;
         //}
 
-        async void btnSelectPicture_Clicked(object sender, EventArgs e)
-        {
-            var mediaFile = await mediaPicker.SelectPhotoAsync(new CameraMediaStorageOptions());
+        //async void btnSelectPicture_Clicked(object sender, EventArgs e)
+        //{
+        //    var mediaFile = await mediaPicker.SelectPhotoAsync(new CameraMediaStorageOptions());
 
-            Debug.WriteLine($"picture path : {mediaFile.Path}");
+        //    Debug.WriteLine($"picture path : {mediaFile.Path}");
 
-            imgPhoto.Source = mediaFile.Path;
+        //    imgPhoto.Source = mediaFile.Path;
 
 
-        }
+        //}
 
 
         async void Save_Clicked(object sender, EventArgs e)
@@ -58,10 +58,10 @@ namespace Trady.Views
             await Navigation.PopAsync();
         }
 
-        void Upload_Clicked(object sender, EventArgs e)
-        {
+        //void Upload_Clicked(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
     }
 }
