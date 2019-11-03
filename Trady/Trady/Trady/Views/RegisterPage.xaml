@@ -15,11 +15,11 @@
 
             <Image Source="logo330.png" AbsoluteLayout.LayoutBounds=".5,.03,.3,.2" AbsoluteLayout.LayoutFlags="All"/>
 
-            <Frame BorderColor="Red"  CornerRadius="50" BackgroundColor="Black" Opacity="0.6" AbsoluteLayout.LayoutBounds=".5,.27,.5,.07" AbsoluteLayout.LayoutFlags="All" Padding="0,0,0,0">
-                <Label Text="TRADY" FontSize="35" FontAttributes="Bold" TextColor="DeepPink" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Frame BorderColor="Red"  CornerRadius="50" BackgroundColor="Black" Opacity="0.6" AbsoluteLayout.LayoutBounds=".5,.27,.35,.07" AbsoluteLayout.LayoutFlags="All" Padding="0,0,0,0">
+                <Label Text="TRADY" FontSize="35" FontAttributes="Bold" TextColor="#Red" HorizontalOptions="Center" VerticalOptions="Center"/>
             </Frame>
 
-            <Frame BorderColor="Red"  CornerRadius="50" BackgroundColor="DeepPink" Opacity="0.6" AbsoluteLayout.LayoutBounds=".5,.37,.7,.09" AbsoluteLayout.LayoutFlags="All" Padding="0,0,0,0">
+            <Frame BorderColor="Red"  CornerRadius="50" BackgroundColor="DeepPink" Opacity="0.6" AbsoluteLayout.LayoutBounds=".5,.37,.6,.09" AbsoluteLayout.LayoutFlags="All" Padding="0,0,0,0">
                 <Label Text="REGISTER" FontSize="45" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
             </Frame>
 
