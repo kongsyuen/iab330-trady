@@ -15,12 +15,16 @@
 
                             <!--<ImageCell Text="{Binding Information}" Detail="{Binding Date}" ImageSource="{Binding Photo}" />-->
                             <ViewCell.ContextActions>
+                                <!--<MenuItem Text="Add To SaveList" Clicked="AddToSaveList_Clicked" CommandParameter="{Binding .}" />-->
                                 <MenuItem Text="Edit" Clicked="Edit_Clicked" CommandParameter="{Binding .}" />
                                 <MenuItem Text="Delete" Clicked="Delete_Clicked" CommandParameter="{Binding .}" IsDestructive="True" />
+                                
                             </ViewCell.ContextActions>
                             <StackLayout Orientation="Horizontal">
                                 <Image Source="{Binding Photo}" HeightRequest="60" WidthRequest="60" />
                                 <Label Text="{Binding Information}" />
+                                <Label Text="{Binding Category}"/>
+                                <Label Text="{Binding Date}"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
