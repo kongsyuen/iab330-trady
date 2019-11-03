@@ -58,5 +58,10 @@ namespace Trady.Views
             await Navigation.PopAsync();
         }
 
+        void Upload_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
