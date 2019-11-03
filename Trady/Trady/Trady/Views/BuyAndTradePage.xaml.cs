@@ -52,6 +52,17 @@ namespace Trady.Views
             var items = e.Item as Item;
             await Navigation.PushAsync(new DetailPage(items));
         }
+        void Edit_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        void Delete_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+
         //async void Edit_Clicked(object sender, EventArgs e)
         //{
         //    var mi = ((MenuItem)sender);
