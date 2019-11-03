@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using Trady.Interface;
+using Trady.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XLabs.Ioc;
@@ -12,29 +14,32 @@ namespace Trady.Views
     public partial class AddPage : ContentPage
     {
         private IMediaPicker mediaPicker;
-
+        IItemRepository itemRepository;
         public AddPage()
         {
             InitializeComponent();
 
+            itemRepository =
+                Resolver.Resolve<IItemRepository>();
+            BindingContext = new Item();
 
             mediaPicker = Resolver.Resolve<IMediaPicker>();
-            }
+        }
 
-            //async void btnTakePicture_Clicked(object sender, EventArgs e)
-            //{
-            //    var mediaFile = await mediaPicker.TakePhotoAsync(new CameraMediaStorageOptions
-            //    {
-            //        DefaultCamera = CameraDevice.Rear,
-            //        MaxPixelDimension = 400
-            //    });
+        //async void btnTakePicture_Clicked(object sender, EventArgs e)
+        //{
+        //    var mediaFile = await mediaPicker.TakePhotoAsync(new CameraMediaStorageOptions
+        //    {
+        //        DefaultCamera = CameraDevice.Rear,
+        //        MaxPixelDimension = 400
+        //    });
 
-            //    Debug.WriteLine($"picture path : {mediaFile.Path}");
+        //    Debug.WriteLine($"picture path : {mediaFile.Path}");
 
-            //    imgPhoto.Source = mediaFile.Path;
-            //}
+        //    imgPhoto.Source = mediaFile.Path;
+        //}
 
-            async void btnSelectPicture_Clicked(object sender, EventArgs e)
+        async void btnSelectPicture_Clicked(object sender, EventArgs e)
         {
             var mediaFile = await mediaPicker.SelectPhotoAsync(new CameraMediaStorageOptions());
 
@@ -42,13 +47,16 @@ namespace Trady.Views
 
             imgPhoto.Source = mediaFile.Path;
 
-           
+
         }
 
-        async private void Upload_Clicked(object sender, EventArgs e)
+
+        async void Save_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new HomePage());
+            var item = BindingContext as Item;
+            itemRepository.Insert(item);
+            await Navigation.PopAsync();
         }
-        
+
     }
 }
