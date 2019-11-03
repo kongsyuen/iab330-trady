@@ -5,18 +5,18 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Trady.Views.LogInPage"
-             BackgroundImage="back_ground.jpg"   
              xmlns:viewModel="clr-namespace:Trady.ViewModels">
 
     <ContentPage.BindingContext>
         <viewModel:LoginPageViewModels />
     </ContentPage.BindingContext>
 
-    <AbsoluteLayout Margin="0,20,0,0">
+    <AbsoluteLayout Margin="0,0,0,0">
+        <Image Source="back_ground.jpg" Aspect="Fill" Opacity="0.8"></Image>
         <Image Source="logo330.png" AbsoluteLayout.LayoutBounds=".5,.10,100,100" AbsoluteLayout.LayoutFlags="PositionProportional"/>
         <Frame 
-            CornerRadius ="20" BackgroundColor="#707070" AbsoluteLayout.LayoutBounds=".5,.30,.3,.075" AbsoluteLayout.LayoutFlags="All" Padding="0,0,0,0">
-            <Label Text="TRADY" FontSize="30" TextColor="#FD33A7" HorizontalOptions="Center" VerticalOptions="Center"/>
+            CornerRadius ="20" BackgroundColor="DarkSlateGray" BorderColor="Red" AbsoluteLayout.LayoutBounds=".5,.30,.3,.075" AbsoluteLayout.LayoutFlags="All" Padding="0,0,0,0">
+            <Label Text="TRADY" FontSize="30" TextColor="#Red" HorizontalOptions="Center" VerticalOptions="Center"/>
         </Frame>
         <Frame
            CornerRadius ="20"
@@ -30,8 +30,9 @@
         </Frame>
         <Button Text="Forgot Password?" BackgroundColor="LightGray" BorderRadius="15" HorizontalOptions="Center" FontSize="10" Padding="0,0,0,0" AbsoluteLayout.LayoutBounds=".5,.575,.3,.03" AbsoluteLayout.LayoutFlags="All"/>
         <Button Text="Sign In" BackgroundColor="#2EEEE8" FontSize="16" TextColor="White" BorderRadius="25"  Padding="0,0,0,0" AbsoluteLayout.LayoutBounds=".5,.7,.9,.08" AbsoluteLayout.LayoutFlags="All" Command="{Binding LoginCommand}"/>
-        <Label Text="Don't have a account?" TextColor="White" HorizontalOptions="Center" FontSize="12" AbsoluteLayout.LayoutBounds=".5,.9,.3,.03" AbsoluteLayout.LayoutFlags="All"/>
-        <Label Text="Sign up" TextColor="White" HorizontalOptions="Center" FontSize="12" AbsoluteLayout.LayoutBounds=".5,.95,.3,.03" AbsoluteLayout.LayoutFlags="All">
+        <Label  Text="Don't have a account?" BackgroundColor="White" TextColor="Black" HorizontalOptions="Center" FontSize="12" AbsoluteLayout.LayoutBounds=".5,.9,.5,.03" AbsoluteLayout.LayoutFlags="All"/>
+
+        <Label Text="Sign up" AutomationId="SignUp" TextColor="Black" BackgroundColor="White" HorizontalOptions="Center" FontSize="12" AbsoluteLayout.LayoutBounds=".5,.95,.3,.03" AbsoluteLayout.LayoutFlags="All">
             <Label.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding SignUpCommand}"/>
             </Label.GestureRecognizers>
