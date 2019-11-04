@@ -24,7 +24,7 @@
                     <Label x:Name="CategoryName" FontSize="30" HorizontalOptions="Center" TextColor="Black"/>
                     <Label x:Name="DateName" FontSize="30" HorizontalOptions="Center" TextColor="Black"/>
                 </StackLayout>
-                <Button Grid.Row="2" x:Name="ProfileButton" Grid.ColumnSpan="3" Text="Profile" BackgroundColor="LightSkyBlue"/>
+                <Button Grid.Row="2" x:Name="ProfileButton" Clicked="ProfileButton_Clicked" Grid.ColumnSpan="3" Text="Profile" BackgroundColor="LightSkyBlue"/>
                 <Label x:Name="DescriptionName" FontSize="25" Grid.Row="3" TextColor="Black" BackgroundColor="LightPink" Grid.ColumnSpan="3" LineBreakMode="WordWrap"/>
             </Grid>
         </ScrollView>
