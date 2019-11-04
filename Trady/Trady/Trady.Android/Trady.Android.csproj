@@ -167,7 +167,6 @@
     <Folder Include="Resources\drawable-hdpi\" />
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
-    <Folder Include="DService\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Trady\Trady.csproj">

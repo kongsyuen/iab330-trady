@@ -11,7 +11,7 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <AbsoluteLayout>
-            <Image Source="image1.jpg" Aspect="Fill"/>
+            <Image Source="image1.jpg" Aspect="Fill" Opacity="0.8"/>
 
             <Image Source="logo330.png" AbsoluteLayout.LayoutBounds=".5,.03,.3,.2" AbsoluteLayout.LayoutFlags="All"/>
 
