@@ -7,10 +7,12 @@ using Plugin.Media;
 using Plugin.Media.Abstractions;
 using Rg.Plugins.Popup.Pages;
 using Rg.Plugins.Popup.Services;
+using Trady.Interface;
 using Trady.Models;
 using Trady.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XLabs.Ioc;
 
 namespace Trady.Views
 {
@@ -19,6 +21,7 @@ namespace Trady.Views
     {
         InquiryPageViewModel _inquiryList;
         Inquiries _newInquiry;
+        InquiryRepository inquiryRepository;
         public InquiryCreatePage()
         {
             InitializeComponent();
@@ -26,6 +29,10 @@ namespace Trady.Views
             CategoryPicker.Items.Add("Pet");
             CategoryPicker.Items.Add("Item");
             CategoryPicker.Items.Add("Event");
+            inquiryRepository =
+               Resolver.Resolve<InquiryRepository>();
+            BindingContext = new InquiryEntity();
+
         }
 
         private MediaFile _photo;
@@ -62,7 +69,8 @@ namespace Trady.Views
             ////_newInquiry.InquiryDate = InquiryDate.Text;
             ////_newInquiry.InquiryDetail = InquiryDetail.Text;
             ////_inquiryList.InquiryList.Add(_newInquiry);
-         
+            var inquiry = BindingContext as InquiryEntity;
+            inquiryRepository.Insert(inquiry);
             await Navigation.PushAsync(new Inquiry());
         }
     }
