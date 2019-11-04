@@ -12,7 +12,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ImageCell Text="{Binding Information}" Detail="{Binding Date}" ImageSource="{Binding Photo}" />
-                        
+
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

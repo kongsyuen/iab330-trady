@@ -11,6 +11,7 @@
     <local:ChoosePage Title="Home" Icon="home.png" />
 
     <local:SavelistPage Title="Savelist" Icon="favouritelogo.png" />
+    
 
     <local:Profile Title="Profile" Icon="profilelogo.png"/>
 

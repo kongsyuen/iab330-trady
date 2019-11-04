@@ -52,34 +52,32 @@ namespace Trady.Views
             var items = e.Item as Item;
             await Navigation.PushAsync(new DetailPage(items));
         }
-        void Edit_Clicked(object sender, EventArgs e)
-        {
 
+        //async void AddToSaveList_Clicked(object sender, EventArgs e)
+        //{
+        //    var mi = ((MenuItem)sender);
+        //    var item = mi.CommandParameter as Item;
+
+        //    await Navigation.PushAsync(new SavelistPage(item));
+        //}
+
+        async void Edit_Clicked(object sender, EventArgs e)
+        {
+            var mi = ((MenuItem)sender);
+            var item = mi.CommandParameter as Item;
+
+            await Navigation.PushAsync(new EditPage(item));
         }
 
         void Delete_Clicked(object sender, EventArgs e)
         {
+            var mi = ((MenuItem)sender);
+            var item = mi.CommandParameter as Item;
+
+            itemRepository.Delete(item);
+            listview.ItemsSource = itemRepository.GetAll();
 
         }
-
-
-        //async void Edit_Clicked(object sender, EventArgs e)
-        //{
-        //    var mi = ((MenuItem)sender);
-        //    var actor = mi.CommandParameter as Item;
-
-        //    await Navigation.PushAsync(new EditPage(item));
-        //}
-
-        //void Delete_Clicked(object sender, EventArgs e)
-        //{
-        //    var mi = ((MenuItem)sender);
-        //    var actor = mi.CommandParameter as Item;
-
-        //    itemRepository.Delete(actor);
-        //    listview.ItemsSource = itemRepository.GetAll();
-
-        //}
 
 
         #region "LoadData"
