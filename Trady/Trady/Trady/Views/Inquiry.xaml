@@ -17,7 +17,7 @@
                 <Label Text="INQUIRIES" FontSize="35" HorizontalOptions="Center" VerticalOptions="Center"/>
             </Frame>
             <Button  ImageSource="add.png"  AbsoluteLayout.LayoutBounds=".95,.05,.135,.08" BackgroundColor="MediumPurple" CornerRadius="25" AbsoluteLayout.LayoutFlags="All" Clicked="Button_Clicked"/>
-            <ListView x:Name="PropertyList" AbsoluteLayout.LayoutBounds=".5,.995,1,.65" AbsoluteLayout.LayoutFlags="All" ItemsSource="{Binding InquiryList}" ItemTapped="ListView_ItemTapped" HasUnevenRows="True">
+            <ListView x:Name="listview" AbsoluteLayout.LayoutBounds=".5,.995,1,.65" AbsoluteLayout.LayoutFlags="All" ItemsSource="{Binding InquiryList}" ItemTapped="ListView_ItemTapped" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <!--<ImageCell Text="{Binding Information}" Detail="{Binding Date}" ImageSource="{Binding Photo}" />-->
