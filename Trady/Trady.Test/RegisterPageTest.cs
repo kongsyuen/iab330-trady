@@ -60,7 +60,6 @@ namespace Trady.Test
             //Assert
             Assert.IsTrue(register.Password.Length >= 6);
             Assert.IsFalse(register.Password.Length < 6);
-
         }
     }
 }
